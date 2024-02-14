@@ -1,0 +1,306 @@
+
+:root {
+  --bs-font-sans-serif: Assistant;
+}
+
+html {
+  font-size: 16px;
+  direction: rtl;
+  text-align: right;
+  font-family: 'Assistant', sans-serif;
+  max-width: 100%;
+}
+
+body{
+  background-color: #f9f5ec;
+}
+
+main {
+  padding: 1rem 2rem 1rem 2rem;
+}
+/*תמונת רקע בראש הדף*/
+header {
+  background-image: url("../images/backgroundImg.svg");
+  background-repeat: no-repeat;
+height: 13rem;
+}
+header h3{
+  text-align: center;
+}
+video, img, canvas{
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 800;
+}
+
+p {
+  font-size: 1.2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.3rem;
+}
+/*עיצוב תפריט המבורגר*/
+.btn-mobile {
+  border: none;
+  background: none;
+  padding: .5rem;
+}
+
+#close-nav-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.btn-mobile img {
+  width: 2rem;
+}
+.btn-mobile {
+  display: block;
+}
+.menu-nav.hide-mobile {
+  display: none;
+}
+
+/*עיצוב תפריט ניווט*/
+.menu-nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+    background-color: #8fb6f1;
+    border: 0.1rem solid;
+    flex-direction: column;
+    padding: 4rem 1rem 0 0;
+    position: absolute;
+    height: 17rem;
+    width: 10rem;
+    font-size: 1.5rem;
+    top: 0;
+    right: 0;
+    list-style: none;
+    z-index: 2;
+    border-radius: 1rem;
+}
+
+.menu-nav li {
+  margin-bottom:1rem;
+ 
+}
+
+.menu-nav li:last-child {
+  margin-bottom: 0;
+}
+
+.menu-nav li a {
+  color: #242424;
+  text-decoration: underline;
+
+}
+/*עיצוב יחידות התוכן*/
+#all-units {
+  padding: 0;
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.oneUnit {
+  width: 17rem;
+  height: 21rem;
+  margin: 1rem;
+  background-color: white;
+  border-radius: 3%;
+  text-align: right;
+  font-size: 1.5rem;
+  color: #242424;
+  padding: 1rem;
+  border: 0.1rem solid #000000;
+  box-shadow: rgb(0 0 0) 0.5rem 0.5rem 0px 0px;
+}
+
+#all-units h2 {
+display: block;
+text-align: right;
+width: 100%;
+font-weight: bold;
+padding-right: 1.2rem;
+}
+
+#all-units h3 {
+  margin-top: 0.7rem;
+  font-weight: bold;
+}
+
+h2:nth-of-type(2) {
+  margin-top: 1.5rem;
+}
+
+.oneUnit img{
+  height: 150px; 
+  object-fit: cover;
+  width: 100%; 
+  border: 0.1rem solid black;
+}
+
+.btnWithImg{
+  width: 100%; 
+  padding: 0;
+  border: none;
+}
+.btnWithImg:hover{
+  box-shadow: 3px 3px 6px 3px #0000004d;
+}
+.row{
+  background-color: #c7bef6;
+  border-radius: 0.4rem;
+  color: #242424;
+  padding: 0.3rem;
+  border: 0.1rem solid #000000;
+  box-shadow: rgb(0 0 0) 0.3rem 0.3rem 0px 0px;
+  margin: 0 1rem 1.5rem 0;
+    width: 18rem;
+}
+
+.row>div{
+  display: flex;
+  justify-content: center;
+}
+/*עיצוב כפתורי סינון*/
+.sortBtn{
+  width: 7rem;
+  height: 2rem;
+  margin: 0.5rem;
+  background-color: white;
+  border-radius: 10rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #242424;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  --bs-btn-color: #242424;
+  --bs-btn-border-color: #242424;
+  
+  --bs-btn-hover-color: #f9f5ec;
+  --bs-btn-hover-bg: #242424af;
+  --bs-btn-hover-border-color: #f9f5ec;
+    
+  --bs-btn-active-bg: #242424;
+  --bs-btn-active-border-color: #f9f5ec;
+  --bs-btn-active-color: #f9f5ec;
+}
+
+/*עיצוב פופ-אפ סרטון*/
+.modal-body{
+  display: flex;
+  justify-content: center;
+}
+
+.modal-title{
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+
+}
+
+/*עיצוב לפי גודל מסך מחשב*/
+@media only screen and (min-width: 600px) {
+  html {
+      font-size: 18px;
+  }
+
+  main {
+    padding: 0;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .headingDiv h1{
+    margin-top: 5rem;
+    font-size: 3rem;
+  }
+
+  header {
+    background-position: center;
+    background-size: 50rem;
+  }
+
+  header h3{
+    font-size: 2rem;
+  }
+
+.btn-mobile {
+  display: none;
+}
+/*עיצוב תפריט ניווט*/
+.menu-nav {
+  flex-direction: row;
+  padding: 1rem;
+  background-color: #f9f5ed;
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
+  position: fixed;
+  height: unset;
+  width: 100%;
+  top: 0;
+  border-bottom: 0.1rem solid;
+  font-size: 1.2rem;
+}
+
+.menu-nav.hide-mobile {
+    display: flex;
+}
+
+.menu-nav li {
+    margin-left: 1rem;
+    margin-bottom: 0;
+
+}
+
+.menu-nav li a {
+text-decoration: none;
+}
+.menu-nav li a:hover {
+font-weight: bold;
+  }
+/*עיצוב יחידות התוכן*/
+  .oneUnit{        
+    margin: 1rem;
+    width: 18rem;
+    height: 26rem;
+  }
+
+  .oneUnit img{
+    height: 250px; 
+    object-fit: cover; 
+  }
+
+  #all-units h2 {
+    padding-right: 2rem;
+    }
+
+  .row{
+    width: fit-content;
+    margin: 2rem 2rem 2rem 0;
+    }
+
+  .row>*{
+    width: auto;
+  }
+}

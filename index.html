@@ -1,0 +1,71 @@
+﻿<!doctype html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="JavaScript Prog 3">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Telem">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aerial_acro</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+
+    <div class="container" id="itemsContainer">
+        <header>
+        <!-- navigation menu -->
+        <nav>
+            <button id="nav-button" class="btn-mobile" onclick="toggleNav()"><img src="images/nav-icon.svg"
+                    alt="ניווט"></button>
+            <ul id="main-nav" class="menu-nav hide-mobile">
+                <button id="close-nav-button" class="btn-mobile" onclick="toggleNav()"><img src="images/nav-close.svg"
+                        alt="סגירה"></button>
+                <li><a href="index.html" style="font-weight: 600;">הידעת?</a></li>
+                <li><a href="#">מי אנחנו</a></li>
+                <li><a href="#">סניפים</a></li>
+                <li><a href="#">הכשרות</a></li>
+            </ul>
+        </nav>
+        <div class="headingDiv">
+            <h1>עולם האקרובטיקה האווירית</h1>
+            <h3>כנסו להכיר את העולם</h3>
+        </div>
+        </header>
+<main id="unitsContainer">
+    <div class="row">
+        <h4>סינון לפי:</h4>
+          <!-- Bootstrap Radio Buttons for sorting -->
+          <div role="group" aria-label="Sort by Category">
+            <input type="radio" class="btn-check" name="categorySort" id="All" autocomplete="off" checked>
+            <label class="btn btn-outline-primary sortBtn" for="All">הכל</label>
+  
+            <input type="radio" class="btn-check" name="categorySort" id="elements" autocomplete="off">
+            <label class="btn btn-outline-primary sortBtn" for="elements">אלמנטים</label>
+  
+            <input type="radio" class="btn-check" name="categorySort" id="exercises" autocomplete="off">
+            <label class="btn btn-outline-primary sortBtn" for="exercises">תרגילים</label>
+        </div>
+
+</main>
+
+    </div>
+</body>
+
+</html>
